@@ -5,7 +5,7 @@
     <h1>Students</h1>
     <a href="student.aspx">Student Details</a>
     <asp:GridView ID="grdStudents" runat="server" CssClass="table table-striped"
-        AutoGenerateColumns="false" OnRowDeleting="grdStudents_RowDeleting" DataKeyNames="StudentID">
+        AutoGenerateColumns="false" OnRowDeleting="grdStudents_RowDeleting" AllowSorting="true" DataKeyNames="StudentID">
         <Columns>
             <asp:BoundField DataField="StudentID" HeaderText="Student ID" />
             <asp:BoundField DataField="FirstMidName" HeaderText="First Name" />
